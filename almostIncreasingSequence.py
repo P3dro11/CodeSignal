@@ -5,14 +5,14 @@ Sequence containing only one element is also considered to be strictly increasin
     
 """
 def solution(sequence):
-    fails1 = 0 
+    fails1 = 0 # we do two testing case bc if there is another values that needs to be taken out of the array. 
     fails2 = 0
     
-    for i in range(len(sequence)-1):
+    for i in range(len(sequence)-1): #We first check through the array for an element to be remove. 
         if sequence[i] >= sequence[i+1]:
             fails1 = fails1 + 1
     
-    for i in range(len(sequence)-2):
+    for i in range(len(sequence)-2):# Same thing goes on here. 
         if sequence[i] >= sequence[i+2]:
             fails2 = fails2 + 1
     
