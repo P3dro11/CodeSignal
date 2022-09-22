@@ -13,3 +13,4 @@ def solution(statues):
         if statues[i + 1] - statues[i] > 1:
             s += statues[i+1] - statues[i]-1
     return s 
+

@@ -5,7 +5,7 @@ Sequence containing only one element is also considered to be strictly increasin
     
 """
 def solution(sequence):
-    fails1 = 0
+    fails1 = 0 
     fails2 = 0
     
     for i in range(len(sequence)-1):
@@ -13,7 +13,7 @@ def solution(sequence):
             fails1 = fails1 + 1
     
     for i in range(len(sequence)-2):
-        if sequnece[i] >= sequence[i+2]:
+        if sequence[i] >= sequence[i+2]:
             fails2 = fails2 + 1
     
     if (fails1 < 2) and (fails2 < 2):
